@@ -35,9 +35,10 @@ $$
 Celui-ci se factorise en 2 polynômes $P(X)$ et $Q(X)$ :
 
 $$
+\begin{array}{}
 N(X) = (X^{511} + X^{494} + X^{445} + X^{359} + X^{320} + X^{49} + 1) \cdot (X^{513} + X^{348} + X^{327} + X^{313} + X^{249} + X^{212} + 1)
 \\
-\Rightarrow
+\Rightarrow 
 N(X) = P(X) \cdot Q(X)
 \\
 avec
@@ -48,6 +49,7 @@ avec
         Q(X) = X^{513} + X^{348} + X^{327} + X^{313} + X^{249} + X^{212} + 1
     \end{array}
 \right.
+\end{array}
 $$
 
 Les 2 facteurs de `n` sont donc `p` et `q` tels que $p = P(2)$ et $q = Q(2)$
