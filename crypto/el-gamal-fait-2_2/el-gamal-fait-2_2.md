@@ -57,8 +57,8 @@ Dans ce cas, on peut prendre $s = \frac{p-1}{2} - m$, à partir du moment où $\
 
 Il reste à traiter le cas où `2` est un résidu quadratique de `p`. Dans ce cas on regarde si $2^{\frac{p-1}{2}}$ est lui même un résidu. Si ce n'est pas le cas on effectue le même type de raisonnement que précédemment, sinon on poursuit la recherche du premier non résidu quadratique parmi les $2^{\frac{p-1}{2^{i}}}$.
 
-On prendra alors $s = \frac{p-1}{2^i} -m$ avec $i \ge 1 $ correspondant au premier $2^{\frac{p-1}{2^{i}}}$ non résidu quadratique.
+On prendra alors $s = \frac{p-1}{2^i} -m$ avec $i \ge 1$ correspondant au premier $2^{\frac{p-1}{2^{i}}}$ non résidu quadratique.
 
-Un raisonnement identique permet de traiter le cas où `y` n'est pas un résidu quadratique.
+Un raisonnement similaire permet de traiter le cas où `y` n'est pas un résidu quadratique.
 
 Le script [`el-gamal-fait-2-solve.py`](./el-gamal-fait-2-solve.py) implémente cette logique et permet d'obtenir le flag.
