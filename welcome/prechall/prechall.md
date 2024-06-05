@@ -89,8 +89,8 @@ fetch('files/teasing/fcsc2024-dino.wasm')
 
 On en déduit :
 - que des données sont échangées entre la partie JS et WASM via la mémoire `instance.exports.mem.buffer`
-- la plage $[$`0x3000`, `0x3000+90000`$[$ sert à construire l'image en 2D du jeu
-- la plage $[$`0`, `4`$[$ sert à transmettre les interactions utilisateurs (faire sauter ou se baisser dino)
+- la plage [`0x3000`, `0x3000+90000`[ sert à construire l'image en 2D du jeu
+- la plage [`0`, `4`[ sert à transmettre les interactions utilisateurs (faire sauter ou se baisser dino)
 - le déclenchement de la mise à jour de l'image s'effectue via la fonction `run()` WASM (cf. appel à `instance.exports.run()` dans le JS)
 
 Chrome décompile automatiquement le WASM (format binaire) et en propose une version WAT (format texte), dont en voici une synthèse :
