@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://france-cybersecurity-challenge.fr/teasing -->
+<html data-bs-theme="light"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>.ll-nam{color:#2196f3}.ll-num{color:#ec407a}.ll-str{color:#43a047}.ll-rex{color:#ef6c00}.ll-pct{color:#666}.ll-key{color:#555;font-weight:bold}.ll-com{color:#aaa;font-style:italic}</style>
+  <title>FCSC 2024 Prechall</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./FCSC 2024 Prechall_files/logo-fcsc.svg" type="image/x-icon">
+
+  
+
+  
+    <link rel="stylesheet" href="./FCSC_2024_Prechall_files/main.b5d22e52.css">
+  
+
+  
+
+  <script src="./FCSC_2024_Prechall_files/color_mode_switcher.f1806365.js.téléchargement"></script>
+
+  <script type="text/javascript">
+      window.init = {
+          'urlRoot': "",
+          'csrfNonce': "xxxxxxxxxx",
+          'userMode': "users",
+          'userId': 63,
+          'userName': "xxxxxxx",
+          'userEmail': "xxxxxxxx",
+          'teamId': null,
+          'teamName': null,
+          'start': 1712318400,
+          'end': 1713124800,
+          'themeSettings': {"challenge_category_order": "function compareFn(a, b) {\r\n  const catOrder = [\"crypto\", \"reverse\", \"web\", \"pwn\", \"hardware\", \"sca-faults\", \"forensics\", \"sca\", \"misc\", \"intro\", \"welcome\"];\r\n  if (catOrder.indexOf(a) \u003c catOrder.indexOf(b)) {\r\n    return -1;\r\n  } else if (catOrder.indexOf(a) \u003e catOrder.indexOf(b)) {\r\n    return 1;\r\n  }\r\n  return 0;\r\n}", "challenge_order": "function compareFn(a, b) {\r\n  if (a.difficulty \u003c b.difficulty) {\r\n    return -1;\r\n  } else if (a.difficulty \u003e b.difficulty) {\r\n    return 1;\r\n  }\r\n  if (a.value \u003c b.value) {\r\n    return -1;\r\n  } else if (a.value \u003e b.value) {\r\n    return 1;\r\n  }\r\n  return 0;\r\n}", "challenge_window_size": "lg", "use_builtin_code_highlighter": true},
+          'eventSounds': [
+            "/themes/core/static/sounds/notification.webm",
+            "/themes/core/static/sounds/notification.mp3",
+          ],
+      }
+  </script>
+
+  
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
+  <div class="container">
+    <a href="https://france-cybersecurity-challenge.fr/" class="navbar-brand">
+      
+        <img class="align-bottom" src="./FCSC_2024_Prechall_files/logo-fcsc.svg" alt="" width="30" height="30">
+      
+      FCSC 2024
+    </a>
+
+    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#base-navbars" aria-controls="base-navbars" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="base-navbars">
+      <ul class="navbar-nav me-auto">
+        
+
+        
+          <li class="nav-item">
+            <a class="nav-link" href="https://france-cybersecurity-challenge.fr/users">
+              Utilisateurs
+            </a>
+          </li>
+
+          
+        
+
+        
+          <li class="nav-item dropdown">
+            <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Classement</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://france-cybersecurity-challenge.fr/scoreboard">Classique</a></li>
+              <li><a class="dropdown-item" href="https://france-cybersecurity-challenge.fr/scoreboard/matrix">Matrice</a></li>
+              <li><a class="dropdown-item" href="https://france-cybersecurity-challenge.fr/scoreboard/categories">Top par catégories</a></li>
+            </ul>
+          </li>
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="https://france-cybersecurity-challenge.fr/challenges">
+            Challenges
+          </a>
+        </li>
+      </ul>
+
+      <hr class="d-sm-flex d-md-flex d-lg-none">
+
+      <ul class="navbar-nav ms-md-auto d-block d-sm-flex d-md-flex">
+        
+
+          
+
+          <li class="nav-item">
+            <a class="nav-link" href="https://france-cybersecurity-challenge.fr/notifications">
+              <span data-bs-toggle="tooltip" data-bs-placement="bottom" aria-label="Notifications" data-bs-original-title="Notifications">
+                <i class="fas fa-bell d-none d-md-inline d-lg-none"></i>
+              </span>
+              <span class="d-sm-inline d-md-none d-lg-inline">
+                  <i class="fas fa-bell pe-1"></i>
+                  <span x-data="" x-show="$store.unread_count &gt; 0" x-text="$store.unread_count" class="badge rounded-pill bg-danger badge-notification" style="display: none;">0</span>
+                  Notifications
+              </span>
+            </a>
+          </li>
+
+          
+
+          <li class="nav-item">
+            <a class="nav-link" href="https://france-cybersecurity-challenge.fr/user">
+              <span data-bs-toggle="tooltip" data-bs-placement="bottom" aria-label="Compte" data-bs-original-title="Compte">
+                <i class="fas fa-user-circle d-none d-md-inline d-lg-none"></i>
+              </span>
+              <span class="d-sm-inline d-md-none d-lg-inline">
+                <i class="fas fa-user-circle pe-1"></i>
+                Compte
+              </span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="https://france-cybersecurity-challenge.fr/settings">
+              <span data-bs-toggle="tooltip" data-bs-placement="bottom" aria-label="Paramètres" data-bs-original-title="Paramètres">
+                <i class="fas fa-cogs d-none d-md-inline d-lg-none"></i>
+              </span>
+              <span class="d-sm-inline d-md-none d-lg-inline">
+                <i class="fas fa-cogs pe-1"></i>
+                Paramètres
+              </span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="https://france-cybersecurity-challenge.fr/logout">
+              <span data-bs-toggle="tooltip" data-bs-placement="bottom" aria-label="Se déconnecter" data-bs-original-title="Se déconnecter">
+                <i class="fas fa-sign-out-alt d-none d-md-inline d-lg-none"></i>
+              </span>
+              <span class="d-sm-inline d-md-none d-lg-inline">
+                <i class="fas fa-sign-out-alt pe-1"></i><span class="d-lg-none">
+                  Se déconnecter
+                </span>
+              </span>
+            </a>
+          </li>
+        
+        <li class="nav-item">
+          <button class="nav-link theme-switch" type="button">
+            <span data-bs-toggle="tooltip" data-bs-placement="bottom" aria-label="Changer de thème" data-bs-original-title="Changer de thème">
+              <i class="fa-solid fa-sun d-none d-md-inline"></i>
+            </span>
+            <span class="d-sm-inline d-md-none">
+              <i class="fa-solid fa-sun pe-1"></i>
+              Changer de thème
+            </span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main role="main">
+  
+  <div class="container">
+    </div>
+<div class="jumbotron">
+  <div class="container">
+    <h1>
+      Prechall FCSC 2024
+    </h1>
+  </div>
+</div>
+<div class="container">
+<div class="border p-4 mb-4">
+    <form id="submit_teaser">
+        <div class="row">
+            <div class="col-md-6 form-group text-justify">
+                <p>
+                Pour vous faire patienter jusqu'au <b>5 avril 2024 à 14h</b> pour le lancement
+                du FCSC 2024, nous vous proposons cette année encore une épreuve de teasing !
+                Le point de départ est le jeu donné ci-dessous et vous permettra
+                d'aboutir à un flag au format <b>FCSC{xxx}</b>.
+                La résolution de ce challenge apportera <b>1 point symbolique</b> pour le FCSC 2024,
+                et sera matérialisée sur le site par un 🔥 à côté des noms d'utilisateur.
+            </p>
+            </div>
+            <div class="col-md-6 form-group">
+                <label>Flag</label>
+                <input id="challenge-input" class="challenge-input form-control" type="text" placeholder="Flag">
+                <button id="challenge-submit" class="challenge-submit btn btn-md btn-outline-secondary float-right mt-4" type="submit">
+                    Envoyer
+                </button>
+            </div>
+        </div>
+        <div id="feedback" class="pt-4"></div>
+    </form>
+</div>
+
+<canvas class="w-100" height="75" style="object-fit: contain; image-rendering: pixelated; image-rendering: crisp-edges;"></canvas>
+<p class="text-muted">
+  Utilisez <kbd>Haut</kbd> et <kbd>Bas</kbd> pour éviter les objets.
+</p>
+
+<script>
+  // Prechall Game
+  //fetch('files/teasing/fcsc2024-dino.wasm')
+  //fetch('./FCSC_2024_Prechall_files/fcsc2024-dino.wasm')
+  fetch('./FCSC_2024_Prechall_files/fcsc2024-dino-patched.wasm')
+    .then(response => response.arrayBuffer())
+    .then(bytes => WebAssembly.instantiate(bytes, {Math}))
+    .then(source => {
+      let instance = source.instance;
+      let canvasData = new Uint8Array(instance.exports.mem.buffer, 0x3000, 90000);
+      let canvas = document.querySelector('canvas');
+      let context = canvas.getContext('2d');
+      let imageData = context.createImageData(300, 75);
+      let u8 = new Uint8Array(instance.exports.mem.buffer, 0, 4);
+      let onkey = (down, event) => {
+        let bit;
+        switch (event.code) {
+          case 'ArrowUp': bit = 1; break;
+          case 'ArrowDown': bit = 2; break;
+          default: return;
+        }
+        if (down) {
+          u8[0] |= bit;
+        } else {
+          u8[0] &= ~bit;
+        }
+        event.preventDefault();
+      };
+      document.addEventListener('keydown', onkey.bind(null, 1), false);
+      document.addEventListener('keyup', onkey.bind(null, 0), false);
+
+      // Touch controls
+      let touches = {};
+      let ontouch = (down, event) => {
+        for (let touch of event.changedTouches) {
+          if (down) {
+            let bit;
+            if (touch.clientX < event.target.clientWidth * 0.5) {
+              bit = 2; // down
+            } else {
+              bit = 1; // up
+            }
+            u8[0] |= bit;
+            touches[touch.identifier] = bit;
+          } else {
+            u8[0] &= ~touches[touch.identifier];
+            delete touches[touch.identifier];
+          }
+        }
+        event.preventDefault();
+      };
+      canvas.addEventListener('touchstart', ontouch.bind(null, 1), false);
+      canvas.addEventListener('touchend', ontouch.bind(null, 0), false);
+
+      (function update() {
+        requestAnimationFrame(update);
+        instance.exports.run();
+        imageData.data.set(canvasData);
+        context.putImageData(imageData, 0, 0);
+      })();
+    });
+
+  // Flag submission
+  document.getElementById("submit_teaser").addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    fetch("/api/v1/challenges/attempt_teasing", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "CSRF-Token": init["csrfNonce"],
+      },
+      body: JSON.stringify({
+        "submission": document.getElementById("challenge-input").value,
+      }),
+    }).then((d) => d.json()).then((data) => {
+      var st = data.data.status;
+      if (st == "incorrect") {
+        document.getElementById("feedback").innerHTML = '<div id="alert" class="alert alert-danger"><strong>Incorrect!</strong></div>';
+      } else if (st == "correct") {
+        document.getElementById("feedback").innerHTML = '<div id="alert" class="alert alert-success"><strong>Congrats!</strong></div>';
+      } else if (st == "already_solved") {
+        document.getElementById("feedback").innerHTML = '<div id="alert" class="alert alert-warning">Vous avez déjà validé cette épreuve :-)</div>';
+      }
+    });
+  });
+</script>
+
+  </div>
+
+</main>
+
+<div x-data="">
+  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div x-ref="toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <strong class="me-auto" x-text="$store.toast.title"></strong>
+        <small>just now</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body" x-html="$store.toast.html"></div>
+    </div>
+  </div>
+</div>
+
+
+<div x-data="">
+  <div class="modal fade" x-ref="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" x-text="$store.modal.title"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p x-html="$store.modal.html"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Got it!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script defer="" type="module" src="./FCSC_2024_Prechall_files/index.e9d69436.js.téléchargement"></script><script defer="" type="module" src="./FCSC_2024_Prechall_files/page.e90bdb25.js.téléchargement"></script>
+
+
+
+
+<footer class="footer text-bg-primary" data-bs-theme="dark">
+  <div class="container text-center">
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link" href="https://france-cybersecurity-challenge.fr/reglement">
+          <span class="d-lg-none"><i class="fas fa-book"></i></span>
+          <span class="d-none d-lg-block">Règlement</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://france-cybersecurity-challenge.fr/mentions-legales">
+          <span class="d-lg-none"><i class="fas fa-balance-scale"></i></span>
+          <span class="d-none d-lg-block">Mentions légales</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://france-cybersecurity-challenge.fr/tos">
+          <span class="d-lg-none"><i class="fas fa-balance-scale"></i></span>
+          <span class="d-none d-lg-block">CGU</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://france-cybersecurity-challenge.fr/a-propos">
+          <span class="d-lg-none"><i class="fas fa-info-circle"></i></span>
+          <span class="d-none d-lg-block">À propos du challenge FCSC</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://france-cybersecurity-challenge.fr/privacy">
+          <span class="d-lg-none"><i class="fas fa-cookie"></i></span>
+          <span class="d-none d-lg-block">Données personnelles</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://france-cybersecurity-challenge.fr/faq">
+          <span class="d-lg-none"><i class="fas fa-question-circle"></i></span>
+          <span class="d-none d-lg-block">Foire aux questions</span>
+        </a>
+      </li>
+    </ul>
+    <p class="h6 text-secondary">© ANSSI 2024 - Propulsé par <a class="link-secondary" href="https://ctfd.io/">CTFd</a></p>
+  </div>
+</footer>
+
+</body></html>
